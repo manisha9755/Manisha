@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend><h2>User Registration Form</h2></legend>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a password" required><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br>
+
+                <label for="gender">Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label><br>
+            
+        <br>
+        <label for="knowledge">Test knowledge</label><br>
+        <input type="range" value="knowledge"><br><br>
+        
+
+       
+            <label for="preferences">Select Your Interests:</label><br>
+            <select id="preferences" name="preferences" >
+                <option value="technology">Technology</option>
+                <option value="sports">Sports</option>
+                <option value="music">Music</option>
+                <option value="art">Art</option>
+                <option value="travel">Travel</option>
+            </select><br>
+        <br>
+            <label for="newsletter">
+                Subscribe to our newsletter
+                <input type="checkbox" id="newsletter" name="newsletter"><br>
+                
+            </label>
+        </fieldset>
+       <br>
+       <fieldset>
+            <legend><label for="feedback">Feedback:</label></legend><br>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Leave your feedback or comments here"></textarea>
+       <br><br>
+       <input type="reset" value="reset">
+      <button type="submit" class="btn">Register</button>
+    </fieldset>
+    </form>
+</body>
+</html>
