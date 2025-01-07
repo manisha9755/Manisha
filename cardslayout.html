@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Layout</title>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card-container{
+background: url("./images/fest8.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 20px); /* 4 cards per row */
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 350px;
+  max-width: 150px;
+  height: 200px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover img {
+  opacity: 0.9; 
+  transition: opacity 0.3s ease; /
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: calc(33.33% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; 
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <img src="./images/fest1.jpg" alt="Placeholder">
+      <h3>Ganesh Chaturthi</h3>
+      <p>Ganesh Chaturthi, also known as Vinayaka Chaturthi or Vinayaka Chavithi or Vinayagar Chaturthi, is a Hindu festival celebrating the birthday of Hindu deity Ganesh</p>
+    </div>
+    <div class="card">
+      <img src="./images/fest2.jpg" alt="Placeholder">
+      <h3>Diwali</h3>
+      <p>Diwali, also called Deepavali or Deepawali, is the Hindu festival of lights, with variations celebrated in other Indian religions such as Jainism and Sikhism</p>
+    </div>
+    <div class="card">
+      <img src="./images/fest3.jpg" alt="Placeholder">
+      <h3>Lohri</h3>
+      <p>Lohri is a popular winter Punjabi folk festival celebrated primarily in Northern India. The significance and legends about the Lohri festival are many and these link the festival to the Duggar region and Punjab region</p>
+    </div>
+    <div class="card">
+      <img src="./images/fest4.jpg" alt="Placeholder">
+      <h3>Holi</h3>
+      <p>Holi is a popular and significant Hindu festival celebrated as the Festival of Colours, Love, and Spring. It celebrates the eternal and divine love of the deities Radha and Krishna.</p>
+    </div>
+    <div class="card">
+      <img src="./images/fest55.jpg" alt="Placeholder">
+      <h3>Makar Sankrānti</h3>
+      <p>Makar Sankrānti, also referred to as Uttarāyana, Makara, or simply Sankrānti, is a Hindu observance and a festival. Usually falling on the date of 14 January annually</p>
+    </div>
+    <div class="card">
+      <img src="./images/fest6.jpg" alt="Placeholder">
+      <h3>Dussehra</h3>
+      <p>Vijayadashami, more commonly known as Dussehra, and also known as Dasara or Dashain, is a major Hindu festival celebrated every year at the end of Durga Puja and Navaratri.</p>
+    </div>
+    <div class="card">
+        <img src="./images/fest7.avif" alt="Placeholder">
+        <h3>Raksha Bandhan</h3>
+        <p>Raksha Bandhan is a popular and traditionally Hindu annual rite or ceremony that is central to a festival of the same name celebrated in South Asia.</p>
+    </div>
+    
+        <div class="card">
+        <img src="./images/fest10.jpg" alt="Placeholder">
+        <h3>Christmas</h3>
+        <p>Christmas is an annual festival commemorating the birth of Jesus Christ, observed primarily on December 25 as a religious and cultural celebration among billions of people around the world.</p>
+        </div>
+    
+    
+
+
+</div>
+</body>
+</html>
